@@ -14,7 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    @IBAction func BotaoEntrar(_ sender: Any) {
+        
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "TelaTesteViewController") {
+            present(destinationVC, animated: true, completion: nil)
+        }
+        
+    }
 
 }
 

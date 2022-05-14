@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		913ED7712830627100E3E0C2 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913ED7702830627100E3E0C2 /* CadastroViewController.swift */; };
+		913ED7732830628500E3E0C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913ED7722830628500E3E0C2 /* HomeViewController.swift */; };
 		917FA7D22830593900CD33C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FA7D12830593900CD33C7 /* AppDelegate.swift */; };
 		917FA7D42830593900CD33C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FA7D32830593900CD33C7 /* ViewController.swift */; };
 		917FA7D72830593900CD33C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917FA7D52830593900CD33C7 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		913ED7702830627100E3E0C2 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		913ED7722830628500E3E0C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		917FA7CE2830593900CD33C7 /* PIGGY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIGGY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917FA7D12830593900CD33C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917FA7D32830593900CD33C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +58,32 @@
 		917FA7D02830593900CD33C7 /* PIGGY */ = {
 			isa = PBXGroup;
 			children = (
+				917FA7E52830610E00CD33C7 /* view */,
+				917FA7E3283060C300CD33C7 /* controller */,
 				917FA7D12830593900CD33C7 /* AppDelegate.swift */,
-				917FA7D32830593900CD33C7 /* ViewController.swift */,
-				917FA7D52830593900CD33C7 /* Main.storyboard */,
 				917FA7D82830593B00CD33C7 /* Assets.xcassets */,
 				917FA7DA2830593B00CD33C7 /* LaunchScreen.storyboard */,
 				917FA7DD2830593B00CD33C7 /* Info.plist */,
 			);
 			path = PIGGY;
+			sourceTree = "<group>";
+		};
+		917FA7E3283060C300CD33C7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				917FA7D32830593900CD33C7 /* ViewController.swift */,
+				913ED7702830627100E3E0C2 /* CadastroViewController.swift */,
+				913ED7722830628500E3E0C2 /* HomeViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		917FA7E52830610E00CD33C7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				917FA7D52830593900CD33C7 /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				917FA7D42830593900CD33C7 /* ViewController.swift in Sources */,
+				913ED7712830627100E3E0C2 /* CadastroViewController.swift in Sources */,
 				917FA7D22830593900CD33C7 /* AppDelegate.swift in Sources */,
+				913ED7732830628500E3E0C2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
