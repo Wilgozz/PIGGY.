@@ -168,7 +168,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0iM-Bq-bCE">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCollectionViewCell" id="0iM-Bq-bCE" customClass="ItemCollectionViewCell" customModule="PIGGY" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -197,7 +197,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-eA-cO8">
-                                                            <rect key="frame" x="299" y="33" width="45" height="24"/>
+                                                            <rect key="frame" x="254" y="33" width="90" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                             <color key="textColor" red="0.77028542759999996" green="0.52226531509999996" blue="0.60031020639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -210,6 +210,12 @@
                                                     <constraint firstAttribute="bottom" secondItem="eNC-25-VoH" secondAttribute="bottom" constant="16" id="Db3-fv-qqj"/>
                                                     <constraint firstItem="eNC-25-VoH" firstAttribute="top" secondItem="0iM-Bq-bCE" secondAttribute="top" constant="16" id="eum-xb-9oZ"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="categoria" destination="Pek-PZ-lYq" id="ro0-6z-XLT"/>
+                                                    <outlet property="descricao" destination="jEn-b3-pGC" id="hwR-Vf-hY4"/>
+                                                    <outlet property="imagem" destination="eNC-25-VoH" id="xYx-AZ-MoE"/>
+                                                    <outlet property="valor" destination="Kas-eA-cO8" id="dwD-m7-7zd"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -251,6 +257,7 @@
                         <viewLayoutGuide key="safeArea" id="oHD-u2-BAM"/>
                     </view>
                     <connections>
+                        <outlet property="collectionview" destination="amH-7w-WVX" id="TRW-ie-2sj"/>
                         <outlet property="fundoHome" destination="4eZ-KD-0Ls" id="nkn-5f-tp5"/>
                         <outlet property="navBar" destination="Hdg-wd-7qd" id="cGC-CI-K66"/>
                     </connections>
