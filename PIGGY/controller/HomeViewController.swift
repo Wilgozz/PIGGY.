@@ -11,5 +11,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var navBar: UIView!
     
+    
+    @IBOutlet weak var fundoHome: UIView!
+    
+    override func viewDidLoad() {
+        navBar.bordaRedonda(radius: 16, cantos: [.superiorDireito, .superiorEsquerdo])
+        fundoHome.bordaRedonda(radius: 16, cantos: [.superiorDireito, .superiorEsquerdo])
+    }
 }
