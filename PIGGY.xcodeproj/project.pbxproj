@@ -17,9 +17,14 @@
 		91D8335D2831F15000977A7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8335C2831F15000977A7D /* UIViewExtension.swift */; };
 		91D833602831F8DB00977A7D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8335F2831F8DB00977A7D /* Item.swift */; };
 		91D833622831FB7D00977A7D /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D833612831FB7D00977A7D /* ItemCollectionViewCell.swift */; };
+		91D83364283355BC00977A7D /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D83363283355BC00977A7D /* SQLiteDataBase.swift */; };
+		91D833662833573400977A7D /* InfoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D833652833573400977A7D /* InfoEntry.swift */; };
+		91D83368283359BB00977A7D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D83367283359BB00977A7D /* DataModel.swift */; };
+		FF362B304B62D4820EA0693B /* Pods_PIGGY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6116DF25AE720394C22E44 /* Pods_PIGGY.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4482DD92D96A58EBDF0BEC89 /* Pods-PIGGY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIGGY.release.xcconfig"; path = "Target Support Files/Pods-PIGGY/Pods-PIGGY.release.xcconfig"; sourceTree = "<group>"; };
 		913ED7702830627100E3E0C2 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		913ED7722830628500E3E0C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		917FA7CE2830593900CD33C7 /* PIGGY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIGGY.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +37,11 @@
 		91D8335C2831F15000977A7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		91D8335F2831F8DB00977A7D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		91D833612831FB7D00977A7D /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		91D83363283355BC00977A7D /* SQLiteDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
+		91D833652833573400977A7D /* InfoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEntry.swift; sourceTree = "<group>"; };
+		91D83367283359BB00977A7D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BD6116DF25AE720394C22E44 /* Pods_PIGGY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIGGY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0BA98001F0974AE285F37DE /* Pods-PIGGY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIGGY.debug.xcconfig"; path = "Target Support Files/Pods-PIGGY/Pods-PIGGY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF362B304B62D4820EA0693B /* Pods_PIGGY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D18AFF424C25E4AB6F565F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0BA98001F0974AE285F37DE /* Pods-PIGGY.debug.xcconfig */,
+				4482DD92D96A58EBDF0BEC89 /* Pods-PIGGY.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73885B01C1606309993E1882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6116DF25AE720394C22E44 /* Pods_PIGGY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		917FA7C52830593900CD33C7 = {
 			isa = PBXGroup;
 			children = (
 				917FA7D02830593900CD33C7 /* PIGGY */,
 				917FA7CF2830593900CD33C7 /* Products */,
+				4D18AFF424C25E4AB6F565F7 /* Pods */,
+				73885B01C1606309993E1882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				91D8335F2831F8DB00977A7D /* Item.swift */,
+				91D83363283355BC00977A7D /* SQLiteDataBase.swift */,
+				91D833652833573400977A7D /* InfoEntry.swift */,
+				91D83367283359BB00977A7D /* DataModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -118,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 917FA7E02830593B00CD33C7 /* Build configuration list for PBXNativeTarget "PIGGY" */;
 			buildPhases = (
+				C2DAFEFE822AA1A48A0BB968 /* [CP] Check Pods Manifest.lock */,
 				917FA7CA2830593900CD33C7 /* Sources */,
 				917FA7CB2830593900CD33C7 /* Frameworks */,
 				917FA7CC2830593900CD33C7 /* Resources */,
+				F93795D59FD438F4AA395102 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +213,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2DAFEFE822AA1A48A0BB968 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PIGGY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93795D59FD438F4AA395102 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIGGY/Pods-PIGGY-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIGGY/Pods-PIGGY-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PIGGY/Pods-PIGGY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		917FA7CA2830593900CD33C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -187,7 +265,10 @@
 				913ED7712830627100E3E0C2 /* CadastroViewController.swift in Sources */,
 				917FA7D22830593900CD33C7 /* AppDelegate.swift in Sources */,
 				91D833602831F8DB00977A7D /* Item.swift in Sources */,
+				91D83368283359BB00977A7D /* DataModel.swift in Sources */,
 				913ED7732830628500E3E0C2 /* HomeViewController.swift in Sources */,
+				91D83364283355BC00977A7D /* SQLiteDataBase.swift in Sources */,
+				91D833662833573400977A7D /* InfoEntry.swift in Sources */,
 				91D833622831FB7D00977A7D /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +413,7 @@
 		};
 		917FA7E12830593B00CD33C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0BA98001F0974AE285F37DE /* Pods-PIGGY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +432,7 @@
 		};
 		917FA7E22830593B00CD33C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4482DD92D96A58EBDF0BEC89 /* Pods-PIGGY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
