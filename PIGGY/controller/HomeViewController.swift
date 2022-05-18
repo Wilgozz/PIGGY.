@@ -18,21 +18,25 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionview: UICollectionView!
     
+    @IBOutlet weak var saldoLabel: UILabel!
     
     override func viewDidLoad() {
         navBar.bordaRedonda(radius: 16, cantos: [.superiorDireito, .superiorEsquerdo])
         fundoHome.bordaRedonda(radius: 16, cantos: [.superiorDireito, .superiorEsquerdo])
         collectionview.dataSource = self
+        let dados = DataModel().dados
+        for dado in dados{
+            let item = Item(categoria: dado.categoria, descricao: dado.descricao, valor: dado.valor)
+            itens.append(item)
+        }
+        
+        let saldo = DataModel().saldo
+        let saldoReduzidoCasa: String = String(format: "%.2f", saldo)
+        saldoLabel.text = "R$ \(saldoReduzidoCasa)"
+        
     }
     
-    let itens: [Item] = [
-        Item(categoria: "pet", descricao: "coleira pra jorge", valor: 45),
-        Item(categoria: "compras", descricao: "tinta", valor: 25),
-        Item(categoria: "pet", descricao: "racao", valor: 33),
-        Item(categoria: "salário", descricao: "proventos", valor: 445),
-
-    
-    ]
+    var itens: [Item] = []
 }
 
 extension HomeViewController:UICollectionViewDataSource{

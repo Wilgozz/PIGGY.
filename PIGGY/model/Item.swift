@@ -12,5 +12,5 @@ import UIKit
 struct Item {
     let categoria: String
     let descricao: String
-    let valor: CGFloat
+    let valor: Double
 }

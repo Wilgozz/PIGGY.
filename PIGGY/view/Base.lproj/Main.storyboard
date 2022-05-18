@@ -260,6 +260,7 @@
                         <outlet property="collectionview" destination="amH-7w-WVX" id="TRW-ie-2sj"/>
                         <outlet property="fundoHome" destination="4eZ-KD-0Ls" id="nkn-5f-tp5"/>
                         <outlet property="navBar" destination="Hdg-wd-7qd" id="cGC-CI-K66"/>
+                        <outlet property="saldoLabel" destination="Lta-cl-C1d" id="GTK-DF-aLK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uk5-Eo-JKd" userLabel="First Responder" sceneMemberID="firstResponder"/>

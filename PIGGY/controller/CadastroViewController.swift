@@ -60,6 +60,18 @@ class CadastroViewController: UIViewController {
             print(descricao)
             print(categoria)
             print(entradaESaida)
+            
+            let valorDouble = Double(valor)
+            if var valorArrumado = valorDouble{
+                if entradaESaida == "saída" {
+                    valorArrumado = -valorArrumado
+                }
+                DataModel().insertDados(informacoes: InfoEntry(categoria: categoria, entradaSaida: entradaESaida, descricao: descricao, valor: valorArrumado))
+            }else{
+                let alert = UIAlertController(title: "Erro", message: "não foi possível cadastrar! verifique os campos que foram preenchidos", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.cancel))
+                present(alert, animated: true)
+            }
         }
     }
 }

@@ -10,7 +10,15 @@ import Foundation
 class DataModel{
     private static var sharedDataModel = DataModel()
     let infos:[Item] = []
-    var saldo = 0.00
+    var saldo:Double {
+        get {
+            var soma = 0.0
+            for dado in dados{
+                soma = soma + dado.valor
+            }
+            return soma
+        }
+    }
     var dados:[InfoEntry]{
         get{
             return sqlite.getInfoEntry()
