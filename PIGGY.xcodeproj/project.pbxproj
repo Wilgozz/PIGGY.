@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		917FA7D72830593900CD33C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917FA7D52830593900CD33C7 /* Main.storyboard */; };
 		917FA7D92830593B00CD33C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917FA7D82830593B00CD33C7 /* Assets.xcassets */; };
 		917FA7DC2830593B00CD33C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917FA7DA2830593B00CD33C7 /* LaunchScreen.storyboard */; };
+		918182072835EE0200ABA0CB /* GraficoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918182062835EE0200ABA0CB /* GraficoViewController.swift */; };
 		91D8335D2831F15000977A7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8335C2831F15000977A7D /* UIViewExtension.swift */; };
 		91D833602831F8DB00977A7D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8335F2831F8DB00977A7D /* Item.swift */; };
 		91D833622831FB7D00977A7D /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D833612831FB7D00977A7D /* ItemCollectionViewCell.swift */; };
@@ -34,6 +35,7 @@
 		917FA7D82830593B00CD33C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917FA7DB2830593B00CD33C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917FA7DD2830593B00CD33C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		918182062835EE0200ABA0CB /* GraficoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficoViewController.swift; sourceTree = "<group>"; };
 		91D8335C2831F15000977A7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		91D8335F2831F8DB00977A7D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		91D833612831FB7D00977A7D /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -62,7 +64,6 @@
 				F0BA98001F0974AE285F37DE /* Pods-PIGGY.debug.xcconfig */,
 				4482DD92D96A58EBDF0BEC89 /* Pods-PIGGY.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +115,7 @@
 				917FA7D32830593900CD33C7 /* ViewController.swift */,
 				913ED7702830627100E3E0C2 /* CadastroViewController.swift */,
 				913ED7722830628500E3E0C2 /* HomeViewController.swift */,
+				918182062835EE0200ABA0CB /* GraficoViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -266,6 +268,7 @@
 				917FA7D22830593900CD33C7 /* AppDelegate.swift in Sources */,
 				91D833602831F8DB00977A7D /* Item.swift in Sources */,
 				91D83368283359BB00977A7D /* DataModel.swift in Sources */,
+				918182072835EE0200ABA0CB /* GraficoViewController.swift in Sources */,
 				913ED7732830628500E3E0C2 /* HomeViewController.swift in Sources */,
 				91D83364283355BC00977A7D /* SQLiteDataBase.swift in Sources */,
 				91D833662833573400977A7D /* InfoEntry.swift in Sources */,

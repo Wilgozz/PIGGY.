@@ -144,6 +144,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUZ-cl-5g3">
                                         <rect key="frame" x="274" y="16" width="27" height="27"/>
                                         <state key="normal" image="chart"/>
+                                        <connections>
+                                            <segue destination="n0L-Hv-aAr" kind="show" id="OrW-Mz-Hd1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83422392606735229" green="0.63650894165039062" blue="0.86756277084350586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -399,6 +402,66 @@
             </objects>
             <point key="canvasLocation" x="1445.5999999999999" y="133.5832083958021"/>
         </scene>
+        <!--Grafico View Controller-->
+        <scene sceneID="Tbk-Wb-mH4">
+            <objects>
+                <viewController storyboardIdentifier="GraficoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n0L-Hv-aAr" customClass="GraficoViewController" customModule="PIGGY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KZC-cu-myQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3r-pe-IBe">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTn-CU-cgS">
+                                        <rect key="frame" x="0.0" y="16" width="375" height="27"/>
+                                        <state key="normal" image="mais"/>
+                                        <connections>
+                                            <segue destination="ZWp-E0-45n" kind="show" id="lxg-TM-qEi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nda-ri-6Cs">
+                                        <rect key="frame" x="74" y="16" width="27" height="27"/>
+                                        <state key="normal" image="icons8-home 1"/>
+                                        <connections>
+                                            <segue destination="6g2-Cc-YpL" kind="show" id="d2Z-z7-4xD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFv-Fr-zE5">
+                                        <rect key="frame" x="274" y="16" width="27" height="27"/>
+                                        <state key="normal" image="chart"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83422392609999996" green="0.63650894170000005" blue="0.86756277079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Nda-ri-6Cs" firstAttribute="top" secondItem="l3r-pe-IBe" secondAttribute="top" constant="16" id="2es-ET-9FM"/>
+                                    <constraint firstItem="MFv-Fr-zE5" firstAttribute="top" secondItem="l3r-pe-IBe" secondAttribute="top" constant="16" id="DFk-7S-wSb"/>
+                                    <constraint firstAttribute="height" constant="65" id="GCo-YW-deF"/>
+                                    <constraint firstAttribute="trailing" secondItem="fTn-CU-cgS" secondAttribute="trailing" id="Ka9-Ne-SU4"/>
+                                    <constraint firstItem="Nda-ri-6Cs" firstAttribute="leading" secondItem="l3r-pe-IBe" secondAttribute="leading" constant="74" id="TWO-mo-w60"/>
+                                    <constraint firstItem="fTn-CU-cgS" firstAttribute="centerX" secondItem="l3r-pe-IBe" secondAttribute="centerX" id="Zd4-3O-JwU"/>
+                                    <constraint firstItem="fTn-CU-cgS" firstAttribute="top" secondItem="l3r-pe-IBe" secondAttribute="top" constant="16" id="bXg-ZR-mj0"/>
+                                    <constraint firstItem="fTn-CU-cgS" firstAttribute="leading" secondItem="l3r-pe-IBe" secondAttribute="leading" id="eeb-3R-qQa"/>
+                                    <constraint firstAttribute="trailing" secondItem="MFv-Fr-zE5" secondAttribute="trailing" constant="74" id="oaQ-SJ-28K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94362930140000001" green="0.8873560372" blue="0.89623063309999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="l3r-pe-IBe" secondAttribute="bottom" id="2KB-hi-t8Q"/>
+                            <constraint firstItem="Qxf-Nd-Tiw" firstAttribute="trailing" secondItem="l3r-pe-IBe" secondAttribute="trailing" id="OxC-ZQ-fCQ"/>
+                            <constraint firstItem="l3r-pe-IBe" firstAttribute="leading" secondItem="KZC-cu-myQ" secondAttribute="leading" id="U7F-a2-nKN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qxf-Nd-Tiw"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="l3r-pe-IBe" id="AN1-5O-dnC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiz-hR-vne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="134"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Frame" width="24" height="24"/>
@@ -409,7 +472,8 @@
         <image name="mais" width="27" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="At7-Pa-eR9"/>
+        <segue reference="lxg-TM-qEi"/>
+        <segue reference="d2Z-z7-4xD"/>
         <segue reference="qU9-L1-33R"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18615689569999999" green="0.51197785600000001" blue="0.94479801630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

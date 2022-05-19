@@ -7,6 +7,7 @@ target 'PIGGY' do
 
   # Pods for PIGGY
     pod 'SQLite.swift', '0.11.5'
+    pod 'Charts', '3.2.0'
 
 
 end
